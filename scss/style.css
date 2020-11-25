@@ -365,9 +365,74 @@ body {
   margin: 0 auto;
   padding: 0 15px; }
 
-.thumb {
+.font-open-sans {
+  font-family: 'open sans', sans-serif; }
+
+.top-intro {
+  background: #343434; }
+  .top-intro .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .top-intro ul.left-row {
+    display: flex; }
+    .top-intro ul.left-row li a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #E4F1FE;
+      font-size: 17px;
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+      transition: background 0.4s; }
+      .top-intro ul.left-row li a:hover.icon-twitter {
+        background: #42b6f3; }
+      .top-intro ul.left-row li a:hover.icon-pinterest {
+        background: #d92d2d; }
+      .top-intro ul.left-row li a:hover.icon-facebook {
+        background: #304dbf; }
+      .top-intro ul.left-row li a:hover.icon-instagram {
+        background: #50d0b7; }
+      .top-intro ul.left-row li a:hover.icon-skype {
+        background: #27b3ef; }
+  .top-intro ul.right-row {
+    display: flex; }
+    .top-intro ul.right-row li {
+      color: #dedede;
+      font-weight: 400;
+      font-size: 14px;
+      display: flex;
+      align-items: center; }
+      .top-intro ul.right-row li + li {
+        margin-left: 28px; }
+      .top-intro ul.right-row li i {
+        font-size: 20px;
+        margin-right: 8px; }
+
+.header .header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header .header-flex .logo img {
+    max-width: 172px; }
+  .header .header-flex ul {
+    display: flex;
+    padding: 15px 0; }
+    .header .header-flex ul li.is-active a {
+      color: #3498db; }
+    .header .header-flex ul li a {
+      display: block;
+      padding: 20px 15px;
+      font-weight: 500; }
+      .header .header-flex ul li a:hover {
+        color: #3498db; }
+      .header .header-flex ul li a i {
+        padding-left: 5px; }
+
+section .item .thumb {
   position: relative; }
-  .thumb .screen {
+  section .item .thumb .screen {
     top: 0;
     left: 0;
     position: absolute;
@@ -379,10 +444,10 @@ body {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.4s; }
-    .thumb .screen i {
+    section .item .thumb .screen i {
       font-size: 38px;
       color: #fff; }
-    .thumb .screen:hover {
+    section .item .thumb .screen:hover {
       opacity: 1; }
 
 .title-area {
@@ -398,58 +463,6 @@ body {
     font-family: 'open sans', sans-serif;
     color: #7c7c7c;
     line-height: 1.5; }
-
-.top-intro {
-  background: #343434; }
-  .top-intro .flex-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .top-intro .flex-row .left-row ul {
-      display: flex; }
-      .top-intro .flex-row .left-row ul li a {
-        padding: 12px;
-        color: #E4F1FE;
-        font-size: 17px;
-        display: block;
-        border-right: 1px solid rgba(255, 255, 255, 0.15);
-        transition: background 0.4s; }
-        .top-intro .flex-row .left-row ul li a:hover {
-          background: #3498db; }
-    .top-intro .flex-row .right-row ul {
-      display: flex; }
-      .top-intro .flex-row .right-row ul li {
-        color: #dedede;
-        font-weight: 400;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        font-family: 'open sans', sans-serif; }
-        .top-intro .flex-row .right-row ul li i {
-          font-size: 20px;
-          padding-left: 20px;
-          padding-right: 7px;
-          perspective-origin: right; }
-
-.header .header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .header .header-flex .logo img {
-    max-width: 172px; }
-  .header .header-flex ul {
-    display: flex;
-    padding: 15px 0; }
-    .header .header-flex ul li.li-color a {
-      color: #3498db; }
-    .header .header-flex ul li a {
-      display: block;
-      padding: 20px 15px;
-      font-weight: 500; }
-      .header .header-flex ul li a:hover {
-        color: #3498db; }
-      .header .header-flex ul li a i {
-        padding-left: 5px; }
 
 .promotion-banner {
   padding: 60px 0;
