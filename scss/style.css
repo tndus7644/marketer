@@ -368,6 +368,15 @@ body {
 .font-open-sans {
   font-family: 'open sans', sans-serif; }
 
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 3px; }
+
 .top-intro {
   background: #343434; }
   .top-intro .container {
@@ -416,19 +425,56 @@ body {
   align-items: center; }
   .header .header-flex .logo img {
     max-width: 172px; }
-  .header .header-flex ul {
-    display: flex;
-    padding: 15px 0; }
-    .header .header-flex ul li.is-active a {
+  .header .header-flex ul.main-menu {
+    display: flex; }
+    .header .header-flex ul.main-menu li.is-active a {
       color: #3498db; }
-    .header .header-flex ul li a {
-      display: block;
-      padding: 20px 15px;
-      font-weight: 500; }
-      .header .header-flex ul li a:hover {
+    .header .header-flex ul.main-menu > li {
+      position: relative; }
+      .header .header-flex ul.main-menu > li:hover > a {
         color: #3498db; }
-      .header .header-flex ul li a i {
-        padding-left: 5px; }
+      .header .header-flex ul.main-menu > li:hover .dropdown {
+        display: flex; }
+      .header .header-flex ul.main-menu > li > a {
+        display: block;
+        padding: 35px 15px;
+        font-weight: 500; }
+        .header .header-flex ul.main-menu > li > a i {
+          padding-left: 5px; }
+    .header .header-flex ul.main-menu .two-column-dropdown {
+      padding: 15px 15px;
+      width: 480px; }
+      .header .header-flex ul.main-menu .two-column-dropdown .submenu {
+        width: 50%; }
+        .header .header-flex ul.main-menu .two-column-dropdown .submenu .menu-title h3 {
+          font-weight: 500;
+          line-height: 1.8; }
+        .header .header-flex ul.main-menu .two-column-dropdown .submenu .menu-title p {
+          font-size: 13px;
+          color: #7c7c7c; }
+        .header .header-flex ul.main-menu .two-column-dropdown .submenu ul {
+          margin-top: 18px; }
+          .header .header-flex ul.main-menu .two-column-dropdown .submenu ul li a {
+            line-height: 1.7;
+            font-size: 13px;
+            color: #7c7c7c; }
+            .header .header-flex ul.main-menu .two-column-dropdown .submenu ul li a:hover {
+              color: #3498db; }
+          .header .header-flex ul.main-menu .two-column-dropdown .submenu ul li i {
+            margin-right: 8px; }
+
+.column-dropdown {
+  width: 200px; }
+  .column-dropdown ul {
+    width: 100%; }
+    .column-dropdown ul li {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 7px; }
+      .column-dropdown ul li a {
+        font-size: 13px;
+        color: #777; }
+        .column-dropdown ul li a:hover {
+          color: #3498db; }
 
 section .item .thumb {
   position: relative; }
