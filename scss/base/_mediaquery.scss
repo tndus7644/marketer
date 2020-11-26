@@ -1,0 +1,37 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 750px;
+    ul.main-menu {
+      li.main-menu-btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+
+        span.icon-bar {
+          display: block;
+          width: 22px;
+          height: 2px;
+          background: #888;
+          margin-bottom: 7px;
+        }
+      }
+
+      li {
+        display: none;
+      }
+    }
+  }
+}
+
