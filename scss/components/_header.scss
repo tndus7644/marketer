@@ -91,7 +91,15 @@
     }
 
     ul.main-menu {
+      height: 87px;
       display: flex;
+      align-items: center;
+
+
+        li.main-menu-btn {
+
+        }
+
 
       li.is-active a {
         color: #3498db;
@@ -169,18 +177,21 @@
   }
 }
 
-.column-dropdown{
+.column-dropdown {
   width: 200px;
-  ul{
+
+  ul {
     width: 100%;
-    li{
+
+    li {
       border-bottom: 1px solid #ccc;
       padding: 10px 7px;
-      a{
+
+      a {
         font-size: 13px;
         color: #777;
 
-        &:hover{
+        &:hover {
           color: #3498db;
         }
       }
