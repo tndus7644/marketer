@@ -4,11 +4,11 @@
 @import "./base/reset";
 @import "./base/normalize";
 @import "./base/common";
-@import "./base/mediaquery";
+
+//pages
+@import "./pages/main";
 
 //components
 @import "./components/card";
 @import "./components/header";
-
-//pages
-@import "./pages/main";
+@import "components/mediaquery";

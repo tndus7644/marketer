@@ -1,6 +1,6 @@
 
 section {
-  .item{
+  .item {
     .thumb {
       position: relative;
 
@@ -51,8 +51,6 @@ section {
 }
 
 
-
-
 .promotion-banner {
   padding: 60px 0;
   background: rgb(52, 152, 219);
@@ -96,6 +94,7 @@ section {
         }
       }
     }
+
   }
 }
 
@@ -172,14 +171,14 @@ section {
     display: flex;
 
     .video-box {
-      width: 570px;
+      width: 50%;
       height: 317px;
       background: #999;
+      margin-right: 30px;
     }
 
     ul {
       width: 50%;
-      padding-left: 40px;
     }
 
     .item {
@@ -194,7 +193,7 @@ section {
           font-weight: 500;
           transition: background 0.4s;
 
-          &:hover{
+          &:hover {
             background: #f0f0f0;
           }
 
@@ -509,9 +508,10 @@ section {
   padding: 90px 0 50px;
 
   .title-area {
-    h2{
+    h2 {
       color: #ddd;
     }
+
     p {
       color: #bbb;
     }
@@ -556,7 +556,7 @@ section {
         padding: 10px 0 15px;
         position: relative;
 
-        &::after{
+        &::after {
           content: '';
           display: block;
           margin: 20px auto 0;
@@ -589,10 +589,31 @@ section {
         font-size: 18px;
         color: #fff;
         background: #4099ff;
-        transition: color 0.3s;
+
+        i{
+          transition: color 0.3s;
+        }
+
+        &.icon-twitter {
+          background: #42b6f3;
+        }
+
+        &.icon-pinterest {
+          background: #d92d2d;
+        }
+
+        &.icon-facebook {
+          background: #304dbf;
+        }
+
+        &.icon-dribble {
+          background: #ea4c89;
+        }
 
         &:hover{
-          color: #ccc;
+          i{
+            color: #e8e8e8;
+          }
         }
       }
     }
@@ -811,7 +832,7 @@ section {
           border-bottom: 1px solid #999;
           padding: 10px 0 6px;
 
-          a{
+          a {
             font-size: 14px;
           }
         }
@@ -902,6 +923,8 @@ section {
       .top-scroll-btn {
         a {
           display: block;
+          width: 40px;
+          height: 40px;
           padding: 7px 11px 9px;
           border-radius: 5px;
           border: 1px solid #999;
