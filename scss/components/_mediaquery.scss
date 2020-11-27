@@ -1,0 +1,324 @@
+@media screen and (max-width: 1200px) {
+
+  .container {
+    width: 970px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+
+  .container {
+    width: 750px;
+  }
+
+  .promotion-banner {
+    .container {
+      width: 100%;
+    }
+
+    .banner-flex {
+      .banner-script {
+        p {
+          font-size: 17px;
+        }
+      }
+
+      .banner-img {
+        width: 50%;
+      }
+    }
+  }
+
+  ul.main-menu {
+    li.main-menu-btn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+
+
+      span.icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: #888;
+        margin-bottom: 7px;
+      }
+    }
+
+    li {
+      display: none;
+    }
+  }
+
+  .e-mail {
+    .e-mail-flex {
+      .e-mail-img {
+        width: 50%;
+        padding: 40px 15px 0 50px;
+
+        &::after {
+          display: none;
+        }
+
+        .letter-info {
+          width: 50%;
+        }
+      }
+
+      .letter-info {
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+
+        > h3 {
+          font-size: 26px;
+        }
+
+        .e-mail-box {
+          h3 {
+            margin: 0 auto;
+            text-align: left;
+          }
+
+          .e-mail-btn {
+            a {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer-top {
+      ul.footer-list-flex {
+        display: block;
+
+        > li {
+          padding: 30px 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 795px) {
+
+  .promotion-banner {
+    padding: 90px 0;
+
+    .banner-flex {
+      .banner-script {
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .banner-img {
+        margin: auto 0;
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 742px;
+  }
+
+  .top-intro {
+    display: none;
+  }
+
+  .features {
+    ul {
+      li {
+        width: 100%;
+        padding: 20px 0;
+      }
+    }
+  }
+
+  .video {
+    .video-flex {
+      display: block;
+
+      .video-box {
+        width: 100%;
+        height: 400px;
+      }
+
+      ul {
+        width: 100%;
+      }
+    }
+  }
+
+  .project {
+    ul {
+      display: block;
+
+      li {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .spec-icon {
+    ul {
+      display: block;
+
+      li {
+        width: 50%;
+        margin: 0 auto;
+        padding: 15px 0;
+      }
+    }
+  }
+
+  .testimonials {
+    ul {
+      display: block;
+
+      li {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .latest-news {
+    ul {
+      display: block;
+
+      li {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+  }
+
+  .meet-team {
+    ul {
+      display: block;
+
+      li {
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0;
+      }
+    }
+  }
+
+  .working-process {
+    .process-bg {
+      background: #fff url(http://demo.ovathemes.com/marketer/wp-content/themes/marketerova/assets/img/process-line.png) 50% 100px / auto no-repeat;
+      ul {
+        display: block;
+
+        li {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .e-mail{
+    .e-mail-flex{
+      display: block;
+      .e-mail-img{
+        width: 30%;
+        padding: 50px 0 100px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+
+  .footer{
+    .footer-bottom{
+      .footer-bottom-flex{
+        display: block;
+        text-align: center;
+        .top-scroll-btn{
+          a{
+            margin: 10px auto;
+          }
+        }
+        ul{
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px){
+  .container {
+    width: 550px;
+  }
+
+  .promotion-banner{
+    .banner-flex{
+      .banner-script{
+        h1{
+          font-size: 21px;
+        }
+        p{
+          font-size: 11px;
+        }
+      }
+
+    }
+  }
+
+  .video {
+    .video-flex {
+      display: block;
+
+      .video-box {
+        width: 100%;
+        height: 300px;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 495px){
+  .container{
+    width: 476px;
+  }
+
+  .promotion-banner{
+    .banner-flex{
+      .banner-script{
+        h1{
+          font-size: 30px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+      .banner-img{
+        display: none;
+      }
+    }
+  }
+}
+
