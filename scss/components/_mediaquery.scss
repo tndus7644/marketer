@@ -1,24 +1,28 @@
 @media screen and (max-width: 1200px) {
 
   .container {
-    width: 970px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 104px;
+  }
+
+  .promotion-banner{
+    padding: 5% 0;
   }
 
 }
 
 @media screen and (max-width: 990px) {
 
-  .container {
-    width: 750px;
-  }
 
   .promotion-banner {
     .container {
-      width: 100%;
+      padding: 0 20px;
     }
 
     .banner-flex {
+      align-items: center;
+
       .banner-script {
         p {
           font-size: 17px;
@@ -136,8 +140,9 @@
 
 @media screen and (max-width: 768px) {
   .container{
-    width: 742px;
+    padding: 0 30px;
   }
+
 
   .top-intro {
     display: none;
@@ -153,6 +158,8 @@
   }
 
   .video {
+
+
     .video-flex {
       display: block;
 
@@ -169,10 +176,10 @@
 
   .project {
     ul {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
 
       li {
-        width: 50%;
         margin: 0 auto;
       }
     }
@@ -227,6 +234,7 @@
   .working-process {
     .process-bg {
       background: #fff url(http://demo.ovathemes.com/marketer/wp-content/themes/marketerova/assets/img/process-line.png) 50% 100px / auto no-repeat;
+
       ul {
         display: block;
 
@@ -238,10 +246,11 @@
     }
   }
 
-  .e-mail{
-    .e-mail-flex{
+  .e-mail {
+    .e-mail-flex {
       display: block;
-      .e-mail-img{
+
+      .e-mail-img {
         width: 30%;
         padding: 50px 0 100px;
         margin: 0 auto;
@@ -250,17 +259,19 @@
     }
   }
 
-  .footer{
-    .footer-bottom{
-      .footer-bottom-flex{
+  .footer {
+    .footer-bottom {
+      .footer-bottom-flex {
         display: block;
         text-align: center;
-        .top-scroll-btn{
-          a{
+
+        .top-scroll-btn {
+          a {
             margin: 10px auto;
           }
         }
-        ul{
+
+        ul {
           justify-content: center;
         }
       }
@@ -268,18 +279,17 @@
   }
 }
 
-@media screen and (max-width: 570px){
-  .container {
-    width: 550px;
-  }
+@media screen and (max-width: 570px) {
 
-  .promotion-banner{
-    .banner-flex{
-      .banner-script{
-        h1{
+
+  .promotion-banner {
+    .banner-flex {
+      .banner-script {
+        h1 {
           font-size: 21px;
         }
-        p{
+
+        p {
           font-size: 11px;
         }
       }
@@ -300,22 +310,22 @@
   }
 }
 
-@media screen and (max-width: 495px){
-  .container{
-    width: 476px;
-  }
+@media screen and (max-width: 495px) {
 
-  .promotion-banner{
-    .banner-flex{
-      .banner-script{
-        h1{
+
+  .promotion-banner {
+    .banner-flex {
+      .banner-script {
+        h1 {
           font-size: 30px;
         }
-        p{
+
+        p {
           font-size: 16px;
         }
       }
-      .banner-img{
+
+      .banner-img {
         display: none;
       }
     }
