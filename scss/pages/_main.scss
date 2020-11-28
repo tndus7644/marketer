@@ -253,45 +253,48 @@ section {
 
     li {
       padding: 15px;
-      width: 33.3333%;
+      text-align: center;
+
+      .item {
+        overflow: hidden;
+        border-radius: 5px;
+        border-bottom: 2px solid #e0e0e0;
 
 
-      .desc {
-        background: #fff;
-        padding: 17px 0 20px;
-        text-align: center;
+        .desc {
+          overflow: hidden;
+          background: #fff;
+          padding: 17px 0 20px;
+          text-align: center;
 
-        h3 {
-          padding-bottom: 5px;
+          h3 {
+            padding-bottom: 5px;
 
-          a {
-            font-size: 18px;
-            color: #454545;
-            transition: color 0.4s;
-            font-weight: 500;
+            a {
+              font-size: 18px;
+              color: #454545;
+              transition: color 0.4s;
+              font-weight: 500;
 
-            &:hover {
-              color: #3498db;
+              &:hover {
+                color: #3498db;
+              }
             }
           }
-        }
 
-        p {
-          font-size: 15px;
-          line-height: 1.3;
-          color: #7c7c7c;
-          font-weight: 400;
-          font-style: italic;
+          p {
+            font-size: 15px;
+            line-height: 1.3;
+            color: #7c7c7c;
+            font-weight: 400;
+            font-style: italic;
+          }
         }
       }
     }
   }
 
-  .item {
-    border-radius: 5px;
-    overflow: hidden;
-    border-bottom: 2px solid #e0e0e0;
-  }
+
 }
 
 .spec-icon {
@@ -590,7 +593,7 @@ section {
         color: #fff;
         background: #4099ff;
 
-        i{
+        i {
           transition: color 0.3s;
         }
 
@@ -610,8 +613,8 @@ section {
           background: #ea4c89;
         }
 
-        &:hover{
-          i{
+        &:hover {
+          i {
             color: #e8e8e8;
           }
         }
