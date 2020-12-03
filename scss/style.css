@@ -987,6 +987,93 @@ section .item .thumb {
           .footer .footer-bottom .footer-bottom-flex ul li a {
             font-size: 24px; }
 
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.script-tab {
+  padding: 50px 0; }
+  .script-tab nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; }
+    .script-tab nav .nav-item {
+      width: 130px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ddd;
+      margin: 0 15px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px; }
+  .script-tab .contents {
+    position: relative;
+    height: 300px; }
+    .script-tab .contents .content {
+      padding: 30px;
+      border-radius: 9px;
+      box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: 0;
+      transform: translate(50px);
+      transition: 0.6s; }
+      .script-tab .contents .content h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        transform: translateX(40px);
+        opacity: 0;
+        transition: 1s 0.5s; }
+      .script-tab .contents .content p {
+        font-size: 16px;
+        color: #777;
+        line-height: 1.6;
+        transform: translateX(40px);
+        opacity: 0;
+        transition: 1s 0.8s; }
+      .script-tab .contents .content img {
+        height: 150px;
+        position: absolute;
+        opacity: 0;
+        transition: 0.7s 0.4s; }
+      .script-tab .contents .content.content1 {
+        background: #e4f8ff; }
+        .script-tab .contents .content.content1 img {
+          right: 20px;
+          top: 10px;
+          transform: translateX(40px); }
+      .script-tab .contents .content.content2 {
+        background: #ffeded; }
+        .script-tab .contents .content.content2 img {
+          left: 20px;
+          bottom: 10px;
+          transform: translateY(40px); }
+      .script-tab .contents .content.content3 {
+        background: #fff2dd; }
+        .script-tab .contents .content.content3 img {
+          right: 20px;
+          bottom: 10px;
+          transform: translateX(40px); }
+      .script-tab .contents .content.is-active {
+        opacity: 1;
+        transform: none; }
+        .script-tab .contents .content.is-active h1 {
+          transform: none;
+          opacity: 1; }
+        .script-tab .contents .content.is-active p {
+          transform: none;
+          opacity: 1; }
+        .script-tab .contents .content.is-active img {
+          transform: none;
+          opacity: 1; }
+
 .top-intro {
   background: #343434; }
   .top-intro .container {
