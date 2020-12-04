@@ -1,12 +1,17 @@
 @charset "UTF-8";
 
+//utils
+@import "./utils/mixin";
+
 //base
 @import "./base/reset";
 @import "./base/normalize";
 @import "./base/common";
 
-//components
-@import "./components/card";
-
 //pages
 @import "./pages/main";
+@import "./pages/script-exam";
+
+//components
+@import "./components/card";
+@import "./components/header";
