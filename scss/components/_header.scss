@@ -1,6 +1,6 @@
 .top-intro {
   background: #343434;
-  @include screen-sm{
+  @include screen-sm {
     display: none;
   }
 
@@ -8,11 +8,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include  screen-lg{
+    @include screen-lg {
       margin: 0 auto;
       max-width: 970px;
     }
-    @include  screen-md{
+    @include screen-md {
       max-width: 750px;
     }
   }
@@ -87,112 +87,131 @@
 
 
 .header {
-  padding: 20px 0 ;
+  padding: 20px 0;
+  position: relative;
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-    @include  screen-lg{
+    @include screen-lg {
       margin: 0 auto;
       max-width: 970px;
     }
-    @include  screen-md{
+    @include screen-md {
       max-width: 750px;
     }
-    .main-menu-btn{
 
+
+    .logo img {
+      max-width: 172px;
     }
 
-      .logo img {
-        max-width: 172px;
+    ul.main-menu.tab-menu{
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      li{
+        display: block;
+        margin: 30px auto;
+        width: 750px;
+      }
+    }
+
+
+
+
+    ul.main-menu {
+      display: flex;
+      align-items: center;
+      @include screen-md{
+        display: none;
       }
 
-      ul.main-menu {
-        display: flex;
-        align-items: center;
+
+      li.is-active a {
+        color: #3498db;
+      }
 
 
-        li.is-active a {
-          color: #3498db;
-        }
+      > li {
+        position: relative;
 
 
-        > li {
-          position: relative;
-          @include screen-md{
-            display: none;
-          }
 
-          &:hover {
-            > a {
-              color: #3498db;
-            }
-
-            .dropdown {
-              display: flex;
-            }
-          }
-
+        &:hover {
           > a {
-            display: block;
-            padding: 0 15px;
-            font-weight: 500;
+            color: #3498db;
+          }
+
+          .dropdown {
+            display: flex;
+          }
+        }
+
+        > a {
+          display: block;
+          padding: 0 15px;
+          font-weight: 500;
 
 
-            i {
-              padding-left: 5px;
+          i {
+            padding-left: 5px;
+          }
+        }
+
+      }
+
+      .two-column-dropdown {
+        padding: 15px 15px;
+        width: 480px;
+
+        .submenu {
+          width: 50%;
+
+          .menu-title {
+            h3 {
+              font-weight: 500;
+              line-height: 1.8;
+            }
+
+            p {
+              font-size: 13px;
+              color: #7c7c7c;
             }
           }
 
-        }
+          ul {
+            margin-top: 18px;
 
-        .two-column-dropdown {
-          padding: 15px 15px;
-          width: 480px;
+            li {
 
-          .submenu {
-            width: 50%;
-
-            .menu-title {
-              h3 {
-                font-weight: 500;
-                line-height: 1.8;
-              }
-
-              p {
+              a {
+                line-height: 1.7;
                 font-size: 13px;
                 color: #7c7c7c;
+
+                &:hover {
+                  color: #3498db;
+                }
               }
-            }
 
-            ul {
-              margin-top: 18px;
-
-              li {
-
-                a {
-                  line-height: 1.7;
-                  font-size: 13px;
-                  color: #7c7c7c;
-
-                  &:hover {
-                    color: #3498db;
-                  }
-                }
-
-                i {
-                  margin-right: 8px;
-                }
+              i {
+                margin-right: 8px;
               }
             }
           }
         }
       }
+    }
 
-    .main-menu-btn{
+    .main-menu-btn {
       display: none;
-      @include screen-md{
+      @include screen-md {
         display: block;
         width: 40px;
         height: 40px;
@@ -211,6 +230,7 @@
         }
       }
     }
+
   }
 }
 
