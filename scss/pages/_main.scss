@@ -54,10 +54,10 @@ section {
 .promotion-banner {
   padding: 60px 0;
   background: rgb(52, 152, 219);
-  @include screen-lg{
+  @include screen-lg {
     padding: 5% 0;
   }
-  @include screen-sm{
+  @include screen-sm {
     padding: 90px 0;
   }
 
@@ -65,7 +65,7 @@ section {
   .container {
     display: flex;
     justify-content: space-between;
-    @include screen-md{
+    @include screen-md {
       padding: 0 20px;
       align-items: center;
     }
@@ -104,19 +104,11 @@ section {
           }
         }
       }
+    }
 
-      .banner-img {
-        width: 50%;
-        @include screen-sm{
-          margin: 0 auto;
-          width: 40%;
-        }
-        img{
-          @include  screen-xs{
-            display: none;
-          }
-        }
-
+    .banner-img {
+      @include screen-xs {
+        display: none;
       }
     }
 
@@ -159,7 +151,7 @@ section {
     li {
       width: 33.3333%;
       padding: 15px;
-      @include screen-sm{
+      @include screen-sm {
         width: 100%;
         padding: 20px 0;
       }
@@ -198,7 +190,7 @@ section {
 
   .container {
     display: flex;
-    @include screen-sm{
+    @include screen-sm {
       display: block;
     }
 
@@ -207,7 +199,7 @@ section {
       height: 317px;
       background: #999;
       margin-right: 30px;
-      @include screen-sm{
+      @include screen-sm {
         width: 100%;
         height: 400px;
       }
@@ -215,7 +207,7 @@ section {
 
     ul {
       width: 50%;
-      @include screen-sm{
+      @include screen-sm {
         width: 100%;
       }
 
@@ -289,7 +281,7 @@ section {
 
   ul {
     display: flex;
-    @include screen-sm{
+    @include screen-sm {
       display: flex;
       flex-wrap: wrap;
     }
@@ -298,7 +290,7 @@ section {
     li {
       padding: 15px;
       text-align: center;
-      @include screen-sm{
+      @include screen-sm {
         margin: 0 auto;
       }
 
@@ -351,14 +343,14 @@ section {
   ul {
     display: flex;
     justify-content: space-between;
-    @include screen-sm{
+    @include screen-sm {
       display: block;
     }
 
     li {
       width: 20%;
       padding: 0 15px;
-      @include screen-sm{
+      @include screen-sm {
         width: 50%;
         margin: 0 auto;
         padding: 15px 0;
@@ -427,7 +419,7 @@ section {
     li {
       width: 33.3333%;
       padding: 15px;
-      @include screen-sm{
+      @include screen-sm {
         width: 100%;
         margin: 0 auto;
       }
@@ -491,7 +483,7 @@ section {
   ul {
     padding-top: 35px;
     display: flex;
-    @include screen-sm{
+    @include screen-sm {
       display: block;
     }
 
@@ -499,7 +491,7 @@ section {
     li {
       padding: 0 15px;
       width: 33.3333%;
-      @include screen-sm{
+      @include screen-sm {
         width: 100%;
         padding: 15px;
       }
@@ -591,14 +583,14 @@ section {
 
   ul {
     display: flex;
-    @include screen-sm{
+    @include screen-sm {
       display: block;
     }
 
     li {
       width: 33.3333%;
       padding: 5px 35px;
-      @include screen-sm{
+      @include screen-sm {
         width: 100%;
         margin: 0 auto;
         padding: 30px 0;
@@ -705,13 +697,14 @@ section {
 
   .process-bg {
     background: #fff url(http://demo.ovathemes.com/marketer/wp-content/themes/marketerova/assets/img/process-line.png) 50% 50% / auto no-repeat;
-@include screen-sm{
-  background-position-y: 100px;
-}
+    @include screen-sm {
+      background-position-y: 100px;
+    }
+
     ul {
       display: flex;
       justify-content: space-between;
-      @include screen-sm{
+      @include screen-sm {
         display: block;
       }
 
@@ -719,7 +712,7 @@ section {
         width: 20%;
         display: flex;
         justify-content: center;
-        @include screen-sm{
+        @include screen-sm {
           width: 100%;
           margin: 0 auto;
         }
@@ -777,17 +770,17 @@ section {
   .container {
     display: flex;
     justify-content: center;
-    @include screen-sm{
+    @include screen-sm {
       display: block;
     }
 
     .e-mail-img {
       padding: 40px 100px 0 50px;
       position: relative;
-      @include screen-md{
+      @include screen-md {
         padding: 40px 15px 0 50px;
       }
-      @include screen-sm{
+      @include screen-sm {
         width: 30%;
         padding: 50px 0 100px;
         margin: 0 auto;
@@ -802,8 +795,8 @@ section {
         position: absolute;
         top: 0;
         right: 0;
-        @include screen-md{
-            display: none;
+        @include screen-md {
+          display: none;
         }
       }
     }
@@ -813,7 +806,7 @@ section {
       padding: 30px 0;
       color: #fff;
       line-height: 1.4;
-      @include screen-md{
+      @include screen-md {
         margin-left: 0;
         padding: 0;
         text-align: center;
@@ -823,7 +816,7 @@ section {
         padding-bottom: 30px;
         font-size: 28px;
         font-weight: 400;
-        @include screen-md{
+        @include screen-md {
           font-size: 26px;
         }
       }
@@ -834,7 +827,7 @@ section {
           border: 1px solid #fff;
           border-radius: 5px;
           padding: 20px 25px;
-          @include screen-md{
+          @include screen-md {
             margin: 0 auto;
             text-align: left;
           }
@@ -859,7 +852,7 @@ section {
             background: #fff;
             color: #3498db;
             transition: 0.3s;
-            @include screen-md{
+            @include screen-md {
               margin: 0 auto;
             }
 
@@ -880,7 +873,7 @@ section {
 
   .footer-top {
     padding: 60px 0;
-    @include screen-md{
+    @include screen-md {
       max-width: 750px;
       margin: 0 auto;
     }
@@ -896,7 +889,7 @@ section {
     ul.footer-list {
       display: flex;
       justify-content: space-between;
-      @include screen-md{
+      @include screen-md {
         display: block;
       }
 
@@ -907,7 +900,7 @@ section {
         font-family: 'open sans', sans-serif;
         font-size: 15px;
         width: 25%;
-        @include screen-md{
+        @include screen-md {
           padding: 30px 0;
           width: 100%;
         }
@@ -1018,7 +1011,7 @@ section {
 
   .footer-bottom {
     color: #999;
-    @include screen-md{
+    @include screen-md {
       max-width: 750px;
       margin: 0 auto;
     }
@@ -1041,7 +1034,7 @@ section {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      @include screen-sm{
+      @include screen-sm {
         display: block;
         text-align: center;
       }
@@ -1069,7 +1062,7 @@ section {
           border: 1px solid #999;
           font-size: 26px;
           transition: all 0.5s;
-          @include screen-sm{
+          @include screen-sm {
             margin: 10px auto;
           }
 
@@ -1084,7 +1077,7 @@ section {
       ul {
         display: flex;
         align-items: center;
-        @include screen-sm{
+        @include screen-sm {
           justify-content: center;
         }
 
