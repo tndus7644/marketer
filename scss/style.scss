@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+//utils
+@import "./utils/mixin";
+
 //base
 @import "./base/reset";
 @import "./base/normalize";
@@ -12,4 +15,3 @@
 //components
 @import "./components/card";
 @import "./components/header";
-@import "components/mediaquery";
