@@ -451,15 +451,9 @@ section .item .thumb {
         .promotion-banner .container .banner-script .read-btn a:hover {
           background: #686868;
           border-color: #686868; }
-      .promotion-banner .container .banner-script .banner-img {
-        width: 50%; }
-        @media screen and (max-width: 768px) {
-          .promotion-banner .container .banner-script .banner-img {
-            margin: 0 auto;
-            width: 40%; } }
-        @media screen and (max-width: 495px) {
-          .promotion-banner .container .banner-script .banner-img img {
-            display: none; } }
+    @media screen and (max-width: 495px) {
+      .promotion-banner .container .banner-img {
+        display: none; } }
 
 .sponsors-list {
   background: #f6f7f8;
