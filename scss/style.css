@@ -458,7 +458,7 @@ section .item .thumb {
             margin: 0 auto;
             width: 40%; } }
         @media screen and (max-width: 495px) {
-          .promotion-banner .container .banner-script .banner-img {
+          .promotion-banner .container .banner-script .banner-img img {
             display: none; } }
 
 .sponsors-list {
