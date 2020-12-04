@@ -458,7 +458,7 @@ section .item .thumb {
             margin: 0 auto;
             width: 40%; } }
         @media screen and (max-width: 495px) {
-          .promotion-banner .container .banner-script .banner-img {
+          .promotion-banner .container .banner-script .banner-img img {
             display: none; } }
 
 .sponsors-list {
@@ -1263,7 +1263,8 @@ section .item .thumb {
         margin-right: 8px; }
 
 .header {
-  padding: 20px 0; }
+  padding: 20px 0;
+  position: relative; }
   .header .container {
     display: flex;
     justify-content: space-between;
@@ -1278,16 +1279,27 @@ section .item .thumb {
         max-width: 750px; } }
     .header .container .logo img {
       max-width: 172px; }
+    .header .container ul.main-menu.tab-menu {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      width: 100%; }
+      .header .container ul.main-menu.tab-menu li {
+        display: block;
+        margin: 30px auto;
+        width: 750px; }
     .header .container ul.main-menu {
       display: flex;
       align-items: center; }
+      @media screen and (max-width: 990px) {
+        .header .container ul.main-menu {
+          display: none; } }
       .header .container ul.main-menu li.is-active a {
         color: #3498db; }
       .header .container ul.main-menu > li {
         position: relative; }
-        @media screen and (max-width: 990px) {
-          .header .container ul.main-menu > li {
-            display: none; } }
         .header .container ul.main-menu > li:hover > a {
           color: #3498db; }
         .header .container ul.main-menu > li:hover .dropdown {

@@ -111,9 +111,12 @@ section {
           margin: 0 auto;
           width: 40%;
         }
-        @include  screen-xs{
-          display: none;
+        img{
+          @include  screen-xs{
+            display: none;
+          }
         }
+
       }
     }
 

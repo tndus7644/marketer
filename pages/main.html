@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=block" rel="stylesheet">
     <link rel="stylesheet" href="../scss/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -36,84 +38,88 @@
     <!--header-->
     <div class="header">
         <div class="container">
-                <div class="logo"><a href="#"><img
-                        src="http://demo.ovathemes.com/marketer/wp-content/uploads/2017/03/logo.png" alt=""></a></div>
-                <ul class="main-menu">
-                    <li class="is-active"><a href="#">Home</a></li>
-                    <li><a href="./script-exam.html">Exam<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                        <div class="two-column-dropdown dropdown">
-                            <div class="submenu">
-                                <div class="menu-title">
-                                    <h3>About Marketer</h3>
-                                    <p>Discover our company.</p>
-                                </div>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Our Services</a></li>
-                                    <li><a href="#"><i class="fa fa-rocket" aria-hidden="true"></i>About Our company</a></li>
-                                    <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>Our Amazing Team</a></li>
-                                    <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>Free SEO Analysis</a></li>
-                                </ul>
-                            </div>
-                            <div class="submenu">
-                                <div class="menu-title">
-                                    <h3>Extra pages</h3>
-                                    <p>How we can help you.</p>
-                                </div>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>Pricing Packages</a></li>
-                                    <li><a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i>The Latest News</a></li>
-                                    <li><a href="#"><i class="fa fa-magic" aria-hidden="true"></i>Testimonials</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="#">Case Studies<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                        <div class="column-dropdown dropdown">
-                            <ul>
-                                <li><a href="#">Portfolio main</a></li>
-                                <li><a href="#">Portfolio 2 columns</a></li>
-                                <li><a href="#">Portfolio 3 columns</a></li>
-                                <li><a href="#">Portfolio 4 columns</a></li>
-                                <li><a href="#">Gallery 2 columns</a></li>
-                                <li><a href="#">Gallery 3 columns</a></li>
-                                <li><a href="#">Gallery 4 columns</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Blog<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                        <div class="column-dropdown dropdown">
-                            <ul>
-                                <li><a href="#">Blog Listing</a></li>
-                                <li><a href="#">Blog Single</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <div class="main-menu-btn">
+            <div class="logo"><a href="#"><img
+                    src="http://demo.ovathemes.com/marketer/wp-content/uploads/2017/03/logo.png" alt=""></a></div>
+            <div class="main-menu-btn">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </div>
+            <ul class="main-menu">
+                <li class="is-active"><a href="#">Home</a></li>
+                <li><a href="./script-exam.html">Exam<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="two-column-dropdown dropdown">
+                        <div class="submenu">
+                            <div class="menu-title">
+                                <h3>About Marketer</h3>
+                                <p>Discover our company.</p>
+                            </div>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Our Services</a></li>
+                                <li><a href="#"><i class="fa fa-rocket" aria-hidden="true"></i>About Our company</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>Our Amazing Team</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>Free SEO Analysis</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="submenu">
+                            <div class="menu-title">
+                                <h3>Extra pages</h3>
+                                <p>How we can help you.</p>
+                            </div>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>Pricing Packages</a></li>
+                                <li><a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i>The Latest
+                                    News</a></li>
+                                <li><a href="#"><i class="fa fa-magic" aria-hidden="true"></i>Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Case Studies<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="column-dropdown dropdown">
+                        <ul>
+                            <li><a href="#">Portfolio main</a></li>
+                            <li><a href="#">Portfolio 2 columns</a></li>
+                            <li><a href="#">Portfolio 3 columns</a></li>
+                            <li><a href="#">Portfolio 4 columns</a></li>
+                            <li><a href="#">Gallery 2 columns</a></li>
+                            <li><a href="#">Gallery 3 columns</a></li>
+                            <li><a href="#">Gallery 4 columns</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Blog<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="column-dropdown dropdown">
+                        <ul>
+                            <li><a href="#">Blog Listing</a></li>
+                            <li><a href="#">Blog Single</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
     </div>
     <!--promotion-banner-->
     <div class="promotion-banner">
         <div class="container">
-                <div class="banner-script">
-                    <h1>Social Media Promotion</h1>
-                    <p>Our team of digital marketing consultants create custom <br>
-                        solutions for your internet marketing needs including <br>
-                        outreach, social media and content services.</p>
-                    <div class="read-btn">
-                        <a href="#">
-                            read more
-                        </a>
-                    </div>
+            <div class="banner-script">
+                <h1>Social Media Promotion</h1>
+                <p>Our team of digital marketing consultants create custom <br>
+                    solutions for your internet marketing needs including <br>
+                    outreach, social media and content services.</p>
+                <div class="read-btn">
+                    <a href="#">
+                        read more
+                    </a>
                 </div>
-                <div class="banner-img">
-                    <img src="http://demo.ovathemes.com/marketer/wp-content/uploads/2017/03/rs1.png" alt="">
-                </div>
+            </div>
+            <div class="banner-img">
+                <img src="http://demo.ovathemes.com/marketer/wp-content/uploads/2017/03/rs1.png" alt="">
+            </div>
         </div>
     </div>
     <!--sponsors-list-->
@@ -177,47 +183,47 @@
     <!--section video-->
     <section class="video">
         <div class="container">
-                <div class="video-box"></div>
-                <ul>
-                    <li>
-                        <div class="item">
-                            <h3><a href="#"><i class="fa fa-rocket" aria-hidden="true"></i>
-                                What's the difference
-                                between
-                                organic vs. paid results?
-                            </a></h3>
-                            <span></span>
-                            <p>
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia
-                                magni
-                                dolores eos qui ratione sequi nesciunt. Neque et quis autem velis reprehenderit et quis
-                                voluptate velit esse quam nihil poris ratione sequi enim ipsam voluptatem quia volupti
-                                tempor.
+            <div class="video-box"></div>
+            <ul>
+                <li>
+                    <div class="item">
+                        <h3><a href="#"><i class="fa fa-rocket" aria-hidden="true"></i>
+                            What's the difference
+                            between
+                            organic vs. paid results?
+                        </a></h3>
+                        <span></span>
+                        <p>
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur netsum loris fugit, sed quia
+                            magni
+                            dolores eos qui ratione sequi nesciunt. Neque et quis autem velis reprehenderit et quis
+                            voluptate velit esse quam nihil poris ratione sequi enim ipsam voluptatem quia volupti
+                            tempor.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <h3><a href="#"><i class="fa fa-trophy" aria-hidden="true"></i>
+                            <p>Should I optimize my domain
+                                name
+                                to
+                                include keywords?
                             </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item">
-                            <h3><a href="#"><i class="fa fa-trophy" aria-hidden="true"></i>
-                                <p>Should I optimize my domain
-                                    name
-                                    to
-                                    include keywords?
-                                </p>
-                            </a></h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="item">
-                            <h3><a href="#"><i class="fa fa-gift" aria-hidden="true"></i>
-                                <p>What is the difference between
-                                    indexed
-                                    and crawling?
-                                </p>
-                            </a></h3>
-                        </div>
-                    </li>
-                </ul>
+                        </a></h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <h3><a href="#"><i class="fa fa-gift" aria-hidden="true"></i>
+                            <p>What is the difference between
+                                indexed
+                                and crawling?
+                            </p>
+                        </a></h3>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
     <!--section project-->
@@ -695,22 +701,22 @@
     <!--section e-mail-->
     <section class="e-mail">
         <div class="container">
-                <div class="e-mail-img">
-                    <img src="http://demo.ovathemes.com/marketer/wp-content/uploads/2017/03/email.png" alt="">
-                </div>
-                <div class="letter-info">
-                    <h3>Seen enough? We are currently in the closed beta.<br>
-                        Please enter your email to join the waiting list.</h3>
-                    <div class="e-mail-box">
-                        <h3>Enter Your Email Address</h3>
-                        <p>List choice Marketer</p>
-                        <div class="e-mail-btn">
-                            <a href="#">
-                                GET STARTED!
-                            </a>
-                        </div>
+            <div class="e-mail-img">
+                <img src="http://demo.ovathemes.com/marketer/wp-content/uploads/2017/03/email.png" alt="">
+            </div>
+            <div class="letter-info">
+                <h3>Seen enough? We are currently in the closed beta.<br>
+                    Please enter your email to join the waiting list.</h3>
+                <div class="e-mail-box">
+                    <h3>Enter Your Email Address</h3>
+                    <p>List choice Marketer</p>
+                    <div class="e-mail-btn">
+                        <a href="#">
+                            GET STARTED!
+                        </a>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
     <!--section footer-->
