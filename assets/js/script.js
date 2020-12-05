@@ -11,12 +11,9 @@ const scriptExam = {
     },
 
     tabMenu: function () {
-        const tab = function (){
-            const menu = $('.main-menu');
-            menu.toggleClass('tab-menu');
-        }
-
-        $('.main-menu-btn').on('click', tab);
+        $('.main-menu-btn').on('click', function (){
+            $('.main-menu').toggleClass('tab-menu');
+        });
 
     }
 }
